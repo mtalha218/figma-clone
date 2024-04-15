@@ -1,10 +1,13 @@
-import Image from "next/image";
+"use client"
+import Live from "@/components/Live";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="h-screen overflow-hidden" >
       {" "}
-      <h1 className="text-5xl text-white">Hello</h1>
+      <Navbar/>
+      <section className="flex h-full flex-row"><Live/></section>
     </main>
   );
 }
